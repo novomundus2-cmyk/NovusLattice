@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <radialGradient id="bgGrad" cx="50%" cy="50%" r="70%" fx="30%" fy="30%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="60%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </radialGradient>
+
+    <!-- Metallic Gold/Amber Gradient -->
+    <linearGradient id="goldLattice" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a"/>
+      <stop offset="35%" stop-color="#f59e0b"/>
+      <stop offset="70%" stop-color="#d97706"/>
+      <stop offset="100%" stop-color="#b45309"/>
+    </linearGradient>
+
+    <!-- Laser Cyan / Quantum Energy Gradient -->
+    <linearGradient id="cyanEnergy" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="50%" stop-color="#06b6d4"/>
+      <stop offset="100%" stop-color="#0284c7"/>
+    </linearGradient>
+
+    <!-- Drop Shadow for Monogram -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Dark Obsidian Rounded Slate -->
+  <rect width="512" height="512" rx="112" fill="url(#bgGrad)"/>
+  <rect width="508" height="508" x="2" y="2" rx="110" fill="none" stroke="url(#goldLattice)" stroke-width="2.5" stroke-opacity="0.3"/>
+
+  <!-- Subatomic Lattice Grid (Background Faint Lines) -->
+  <g opacity="0.18" stroke="#38bdf8" stroke-width="1.2" stroke-dasharray="4,6">
+    <!-- Isometric FCC Crystal Planes -->
+    <line x1="90" y1="256" x2="422" y2="256" />
+    <line x1="256" y1="90" x2="256" y2="422" />
+    <polygon points="256,110 390,256 256,402 122,256" fill="none" />
+    <circle cx="256" cy="256" r="146" fill="none" />
+  </g>
+
+  <!-- Crystalline Nodes (Atoms) -->
+  <g fill="url(#cyanEnergy)">
+    <circle cx="132" cy="128" r="7" opacity="0.8" />
+    <circle cx="132" cy="384" r="7" opacity="0.8" />
+    <circle cx="316" cy="128" r="7" opacity="0.8" />
+    <circle cx="316" cy="384" r="7" opacity="0.8" />
+    <circle cx="452" cy="384" r="7" opacity="0.8" />
+    <circle cx="224" cy="256" r="5" opacity="0.5" />
+  </g>
+
+  <!-- Master Monogram NL (Geometric Interlocking Atomic Path) -->
+  <!-- Letter N: Left vertical (132,384)->(132,128), Diagonal (132,128)->(316,384), Right vertical (316,384)->(316,128) -->
+  <!-- Letter L: Stem (316,128)->(316,384), Base (316,384)->(452,384) -->
+  <g filter="url(#glow)">
+    <!-- Base Glow Path -->
+    <path d="M 132 384 L 132 128 L 316 384 L 316 128 M 316 384 L 452 384" 
+          fill="none" 
+          stroke="url(#goldLattice)" 
+          stroke-width="36" 
+          stroke-linecap="round" 
+          stroke-linejoin="round" />
+    
+    <!-- Inner Core Accent Ribbon (Laser Cyan highlight along the diagonal and base) -->
+    <path d="M 132 128 L 316 384 L 452 384" 
+          fill="none" 
+          stroke="url(#cyanEnergy)" 
+          stroke-width="10" 
+          stroke-linecap="round" 
+          stroke-linejoin="round" 
+          opacity="0.9" />
+
+    <!-- Pure Light Core -->
+    <path d="M 132 384 L 132 128 L 316 384 L 316 128" 
+          fill="none" 
+          stroke="#ffffff" 
+          stroke-width="3" 
+          stroke-linecap="round" 
+          stroke-linejoin="round" 
+          opacity="0.65" />
+  </g>
+
+  <!-- Atomic Coordinate Callout -->
+  <text x="256" y="446" 
+        text-anchor="middle" 
+        font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif" 
+        font-size="20" 
+        font-weight="700" 
+        letter-spacing="6" 
+        fill="#f8fafc">
+    NOVUS<tspan fill="#f59e0b">LATTICE</tspan>
+  </text>
+  <text x="256" y="470" 
+        text-anchor="middle" 
+        font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', sans-serif" 
+        font-size="11" 
+        font-weight="600" 
+        letter-spacing="3" 
+        fill="#94a3b8">
+    FCC a=4.078 Å · H¹(Ω) · NOVO MUNDUS
+  </text>
+</svg>
