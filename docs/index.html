@@ -429,7 +429,11 @@
 
     .bib-item strong { color: #241c15; }
 
-    .page-break { page-break-before: always; }
+    /* Continuous natural reading flow without forced artificial page breaks */
+    .hero-block, .meta-toc-grid, .abstract-box, .section-header, .math-block, .editorial-table, .cases-grid, .case-card, .glossary-grid, .glossary-item, .bib-item {
+      break-inside: avoid;
+      page-break-inside: avoid;
+    }
   </style>
 </head>
 <body>
@@ -549,9 +553,8 @@
   </div>
 
   <!-- =======================================================================
-       PAGE 2: MATHEMATICAL FORMULATION & INDUSTRIAL USE CASES
+       SECTION 1: MATHEMATICAL FORMULATION & INDUSTRIAL USE CASES
        ======================================================================= -->
-  <div class="page-break"></div>
 
   <div class="section-header">
     <h2 class="section-title">1. Sutton-Chen Potential & Sobolev H¹(Ω) Regularization</h2>
@@ -674,9 +677,8 @@
   </div>
 
   <!-- =======================================================================
-       PAGE 3: GLOSSARY, SYSTEM ARCHITECTURE & CITATION
+       SECTION 4: GLOSSARY, SYSTEM ARCHITECTURE & CITATION
        ======================================================================= -->
-  <div class="page-break"></div>
 
   <div class="section-header">
     <h2 class="section-title">4. Industrial Implementation: Eliminating Scrap at EPTA France</h2>
