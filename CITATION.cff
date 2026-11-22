@@ -1,0 +1,34 @@
+cff-version: 1.2.0
+message: "If you use the NovusLattice framework, formulas, or simulation tools in academic research or industrial design, please cite it as below."
+authors:
+  - family-names: "Irastorza"
+    given-names: "Mikel"
+    orcid: "https://orcid.org/0009-0005-2423-388X"
+    affiliation: "Novo Mundus"
+    city: "Málaga / Paris"
+    country: "ES"
+    email: "novomundus2@gmail.com"
+title: "NovusLattice: Sutton-Chen Interatomic Potential in Sobolev H¹(Ω) Spaces & Industrial Continuum Mechanics"
+version: "1.0.0"
+date-released: "2026-11-22"
+repository-code: "https://github.com/novomundus2-cmyk/NovusLattice"
+license: "PolyForm-Noncommercial-1.0.0"
+keywords:
+  - "computational physics"
+  - "Sutton-Chen empirical potential"
+  - "Sobolev spaces"
+  - "FCC atomic lattice"
+  - "sheet metal forming"
+  - "elastic springback"
+  - "industrial shearing"
+  - "robotic tribology"
+  - "thermal drift"
+  - "multiscale modeling"
+abstract: >-
+  NovusLattice establishes a rigorous mathematical and computational bridge between 
+  quantum-informed interatomic empirical potentials (Sutton-Chen model in FCC lattices) 
+  and macroscale continuum deformation in Sobolev spaces H¹(Ω). The framework addresses 
+  four mission-critical industrial manufacturing challenges: crystallographic shear in 
+  cutting and punching, non-linear elastic springback recovery in high-precision sheet 
+  bending (EPTA France benchmark, ±0.2 mm tolerance), asperity contact tribology in 
+  robotic manipulation, and ambient factory floor thermal drift compensation.

@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "novuslattice"
+version = "1.0.0"
+authors = [
+  { name="Mikel Irastorza", email="novomundus2@gmail.com" },
+]
+description = "NovusLattice: Sutton-Chen Interatomic Potential in Sobolev H¹(Ω) Spaces & Industrial Continuum Mechanics"
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: Other/Proprietary License",
+    "Operating System :: OS Independent",
+    "Topic :: Scientific/Engineering :: Physics",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/novomundus2-cmyk/NovusLattice"
+"Author" = "https://github.com/novomundus2-cmyk"
+
+[project.scripts]
+novuslattice = "novuslattice.cli:main"
